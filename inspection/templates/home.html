@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    {% load staticfiles %}
+    <link rel="icon" type="image/png" sizes="16x16" href="http://www.sso.mp.gov.in/webroot/img/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="http://www.sso.mp.gov.in/webroot/img/favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="http://www.sso.mp.gov.in/webroot/img/favicon/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="Content-type" content="Content-Type: application/x-font-woff" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+    <meta name="description" content=" Government of Madhya Pradesh" />
+    <meta name="keywords" content="Government of Madhya Pradesh" />
+    <meta name="robots" content="no-cache,noindex,nofollow" />
+    <link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+<div class="row brand" style="background-color:#801902;padding:5px 10px;">
+    <div class="col-xs-1 floatLeft">
+                    <img src="{% static 'images/mplogo.svg' %}" alt="SSO" class="img-responsive TncpLogo " />
+
+                </div>
+
+                <div class="col-xs-9">
+                    <div class="h2 title">स्कूल शिक्षा विभाग, मध्य प्रदेश</div>
+                    <div class="h3 sub-title">e-निरिक्षण</div>
+                    <div class="h4 sub-title">( डिजिटल शाला निरिक्षण प्रणाली )</div>
+                </div>
+
+            </div>
+
+<div class="row tncpnavBar">
+                <div class="col-lg-12">
+                    <div class="topnav" id="myTopnav">
+                        <a href="new_home.aspx" class="active">e-निरिक्षण के बारे में</a>
+                        <a href="{% url 'login' %}">लॉगिन करें</a>
+                        <a href="{% url 'register' %}">साइनअप करें</a>
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                                <i class="fa fa-bars"></i>
+                              </a>
+                    </div>
+                </div>
+            </div>
+
+</body>
+</html>

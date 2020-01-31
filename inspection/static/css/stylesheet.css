@@ -1,0 +1,20 @@
+
+
+
+@font-face {
+    font-family: 'digital-7regular';
+    src: url('digital-7-webfont.woff2') format('woff2'),
+         url('digital-7-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+.count{
+    font-family: 'digital-7regular';
+    font-size: 18px;
+    letter-spacing: 5px;
+    padding: 0px 6px;
+    display: inline-block;
+    width: 75px;
+    border-bottom: 1px solid #404040;
+}
